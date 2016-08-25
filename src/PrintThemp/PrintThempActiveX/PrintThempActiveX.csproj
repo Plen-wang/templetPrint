@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{08EFEADC-146C-46C7-AAD9-0367A318587E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PrintThempActiveX</RootNamespace>
+    <AssemblyName>PrintThempActiveX</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>PrintThempActiveX_Key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditEumnCollectionInfo.cs" />
+    <Compile Include="EditEventReferences.cs" />
+    <Compile Include="EditMainToolEventReferences.cs" />
+    <Compile Include="EditPrintEventArgs.cs" />
+    <Compile Include="EditTemplateAddControlArgs.cs" />
+    <Compile Include="EditTemplateDataSource.cs" />
+    <Compile Include="EditTemplateDSCollection.cs" />
+    <Compile Include="EditTemplateInfo.cs" />
+    <Compile Include="EditTemplateMethod.cs" />
+    <Compile Include="EditTemplatePrint.cs" />
+    <Compile Include="FrmEditControlList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmEditControlList.Designer.cs">
+      <DependentUpon>FrmEditControlList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditFrm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmEditFrm.Designer.cs">
+      <DependentUpon>FrmEditFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditInfoBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditInfoBox.Designer.cs">
+      <DependentUpon>FrmEditInfoBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditMainPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmEditMainPanel.Designer.cs">
+      <DependentUpon>FrmEditMainPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditThempZoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmEditThempZoom.Designer.cs">
+      <DependentUpon>FrmEditThempZoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmEditControlList.resx">
+      <DependentUpon>FrmEditControlList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditFrm.resx">
+      <DependentUpon>FrmEditFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditInfoBox.resx">
+      <DependentUpon>FrmEditInfoBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditMainPanel.resx">
+      <DependentUpon>FrmEditMainPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditThempZoom.resx">
+      <DependentUpon>FrmEditThempZoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PrintThempActiveX_Key.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CDC59DBE-62DB-4B98-B1FA-2916ED5033B4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PrintThemp</RootNamespace>
+    <AssemblyName>PrintThemp</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>PrintThemp_Key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.3.1.24483, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UsingDll\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomEditList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomEditList.Designer.cs">
+      <DependentUpon>CustomEditList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditEumnCollectionInfo.cs" />
+    <Compile Include="EditEventReferences.cs" />
+    <Compile Include="EditMainToolEventReferences.cs" />
+    <Compile Include="EditPrintEventArgs.cs" />
+    <Compile Include="EditTemplateAddControlArgs.cs" />
+    <Compile Include="EditTemplateDataSource.cs" />
+    <Compile Include="EditTemplateDSCollection.cs" />
+    <Compile Include="EditTemplateInfo.cs" />
+    <Compile Include="EditTemplatePrint.cs" />
+    <Compile Include="FrmEagleLook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEagleLook.Designer.cs">
+      <DependentUpon>FrmEagleLook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditAdd.Designer.cs">
+      <DependentUpon>FrmEditAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditControlList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditControlList.Designer.cs">
+      <DependentUpon>FrmEditControlList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditfrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditfrom.Designer.cs">
+      <DependentUpon>FrmEditfrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditInfoBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditInfoBox.Designer.cs">
+      <DependentUpon>FrmEditInfoBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditMainPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditMainPanel.Designer.cs">
+      <DependentUpon>FrmEditMainPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditLeftList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditLeftList.Designer.cs">
+      <DependentUpon>FrmEditLeftList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EditTemplateMethod.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CustomEditList.resx">
+      <DependentUpon>CustomEditList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEagleLook.resx">
+      <DependentUpon>FrmEagleLook.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditAdd.resx">
+      <DependentUpon>FrmEditAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditControlList.resx">
+      <DependentUpon>FrmEditControlList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditfrom.resx">
+      <DependentUpon>FrmEditfrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditInfoBox.resx">
+      <DependentUpon>FrmEditInfoBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditMainPanel.resx">
+      <DependentUpon>FrmEditMainPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditLeftList.resx">
+      <DependentUpon>FrmEditLeftList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PrintThemp_Key.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

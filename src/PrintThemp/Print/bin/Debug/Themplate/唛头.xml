@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Custom_Root>
+  <CODE>006</CODE>
+  <BACK_IMG>006.bmp</BACK_IMG>
+  <CNAME>唛头</CNAME>
+  <ENAME>SHIPPINGMARK</ENAME>
+  <ITEMS>
+    <ITEM>
+      <TAB_INDEX>1</TAB_INDEX>
+      <ITEM_CNAME>重命名2010-7-10 14:15:28</ITEM_CNAME>
+      <ITEM_ENAME>重命名2010-7-10 14:15:28</ITEM_ENAME>
+      <ITEM_WIDTH>200</ITEM_WIDTH>
+      <ITEM_HEIGHT>200</ITEM_HEIGHT>
+      <POS_X>224</POS_X>
+      <POS_Y>139</POS_Y>
+      <MULTILINE>1</MULTILINE>
+      <WORD_WRAP>1</WORD_WRAP>
+      <ITEM_TYPE>PictureBox</ITEM_TYPE>
+    </ITEM>
+    <ITEM>
+      <TAB_INDEX>1</TAB_INDEX>
+      <ITEM_CNAME>重命名2010-7-10 14:16:16</ITEM_CNAME>
+      <ITEM_ENAME>重命名2010-7-10 14:16:16</ITEM_ENAME>
+      <ITEM_WIDTH>200</ITEM_WIDTH>
+      <ITEM_HEIGHT>21</ITEM_HEIGHT>
+      <POS_X>224</POS_X>
+      <POS_Y>371</POS_Y>
+      <MULTILINE>1</MULTILINE>
+      <WORD_WRAP>1</WORD_WRAP>
+      <ITEM_TYPE>TextBoxText</ITEM_TYPE>
+    </ITEM>
+  </ITEMS>
+</Custom_Root>
