@@ -20,35 +20,24 @@
 首先这个套打组件完全是基于Microsoft.net 平台的，C#编写，组件是用.dll动态链接库进行打包的。组件本身可以很好的进行C/S winform模式的程序集成，对于WEB形式的打印是基于ActiveX模式的。WEB形式的打印用起来会比较重。
 
 ###### 3.1.整体界面
-![精简套打组件][1]
-[1]: https://raw.githubusercontent.com/Plen-wang/blogsImage/master/githubimages/templeprint/1.png
+![精简套打组件](https://raw.githubusercontent.com/Plen-wang/blogsImage/master/githubimages/templeprint/1.png)
 >蓝色部分主要是控件、数量的移动坐标。左边是模板列表、主窗口是设计区域。可以通过移动控件来调整数据打印的位置。当你移动控件的时候下面的坐标可以看到窗口的打印相对位置，最后点击应用保存当前模板。
-![精简套打组件][2]
-[2]: https://raw.githubusercontent.com/Plen-wang/blogsImage/master/githubimages/templeprint/2.png
+![精简套打组件](https://raw.githubusercontent.com/Plen-wang/blogsImage/master/githubimages/templeprint/2.png)
 >当你添加好控件之后就可以调整控件的数据类型，不同的数据类型的控件具有不同的正则验证能力。
-![精简套打组件][3]
-[3]: https://raw.githubusercontent.com/Plen-wang/blogsImage/master/githubimages/templeprint/3.png
+![精简套打组件](https://raw.githubusercontent.com/Plen-wang/blogsImage/master/githubimages/templeprint/3.png)
 >这是一个非常人性化的透明的悬浮窗口，帮助你查看当前这个模板的一些基本信息。
-![精简套打组件][4]
-[4]: https://raw.githubusercontent.com/Plen-wang/blogsImage/master/githubimages/templeprint/4.png
+![精简套打组件](https://raw.githubusercontent.com/Plen-wang/blogsImage/master/githubimages/templeprint/4.png)
 >当鼠标悬停在某个控件上的时候就会得到focus的影响，此时你可以拖动也可以删除控件。
-![精简套打组件][5]
-[5]: https://raw.githubusercontent.com/Plen-wang/blogsImage/master/githubimages/templeprint/5.png
+![精简套打组件](https://raw.githubusercontent.com/Plen-wang/blogsImage/master/githubimages/templeprint/5.png)
 可以很方便的删除控件。
-![精简套打组件][6]
-[6]: https://raw.githubusercontent.com/Plen-wang/blogsImage/master/githubimages/templeprint/6.png
+![精简套打组件](https://raw.githubusercontent.com/Plen-wang/blogsImage/master/githubimages/templeprint/6.png)
 >内嵌了系统打印功能，可以调整打印参数。
-![精简套打组件][7]
-[7]: https://raw.githubusercontent.com/Plen-wang/blogsImage/master/githubimages/templeprint/7.png
+![精简套打组件](https://raw.githubusercontent.com/Plen-wang/blogsImage/master/githubimages/templeprint/7.png)
 >批量套打预览。
 控件背后的位置信息和模板的底图都在成对保存在目录里的。
-![精简套打组件][8]
-[8]: https://raw.githubusercontent.com/Plen-wang/blogsImage/master/githubimages/templeprint/8.png
->
-![精简套打组件][9]
-[9]: https://raw.githubusercontent.com/Plen-wang/blogsImage/master/githubimages/templeprint/9.png
-![精简套打组件][10]
-[10]: https://raw.githubusercontent.com/Plen-wang/blogsImage/master/githubimages/templeprint/10.png
+![精简套打组件](https://raw.githubusercontent.com/Plen-wang/blogsImage/master/githubimages/templeprint/8.png)
+![精简套打组件](https://raw.githubusercontent.com/Plen-wang/blogsImage/master/githubimages/templeprint/9.png)
+![精简套打组件](https://raw.githubusercontent.com/Plen-wang/blogsImage/master/githubimages/templeprint/10.png)
 >数据源也是很方便绑定的。
 
 
