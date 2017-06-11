@@ -43,6 +43,7 @@
 ![精简套打组件](https://raw.githubusercontent.com/Plen-wang/blogsImage/master/githubimages/templeprint/8.png)
 ![精简套打组件](https://raw.githubusercontent.com/Plen-wang/blogsImage/master/githubimages/templeprint/9.png)
 ![精简套打组件](https://raw.githubusercontent.com/Plen-wang/blogsImage/master/githubimages/templeprint/10.png)
+
 数据源也是很方便绑定的。
 
 
