@@ -19,7 +19,6 @@
 下面介绍下这个组件大概怎么使用：
 首先这个套打组件完全是基于Microsoft.net 平台的，C#编写，组件是用.dll动态链接库进行打包的。组件本身可以很好的进行C/S winform模式的程序集成，对于WEB形式的打印是基于ActiveX模式的。WEB形式的打印用起来会比较重。
 
-###### 3.1.整体界面
 ![精简套打组件](https://raw.githubusercontent.com/Plen-wang/blogsImage/master/githubimages/templeprint/1.png)
 蓝色部分主要是控件、数量的移动坐标。左边是模板列表、主窗口是设计区域。可以通过移动控件来调整数据打印的位置。当你移动控件的时候下面的坐标可以看到窗口的打印相对位置，最后点击应用保存当前模板。
 
