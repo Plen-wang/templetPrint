@@ -1,4 +1,4 @@
-# templetPrint 套打组件（完全免费）
+# templetPrint 套打组件
 ## 1.背景
 
 纯手工打造精简开源免费套打组件.
